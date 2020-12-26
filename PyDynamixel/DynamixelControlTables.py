@@ -3,7 +3,7 @@ This file contains the classes for the control tables of the dynamixel
 motors. 
 """
 # Dynamixel MX-28T/R/AT/AR for Protocol 1.0
-class MX28_1:
+class MX_P1:
     # Addresses
     ADDR_MODEL_NUMBER = 0
     ADDR_FIRMWARE_VERSION = 2
@@ -78,7 +78,7 @@ class MX28_1:
     LEN_GOAL_ACCELERATION = 1
 
 # Dynamixel MX-28T/R/AT/AR for Protocol 2.0
-class MX28_2:
+class MX_P2:
     # Addresses
     ADDR_MODEL_NUMBER = 0
     ADDR_MODEL_INFORMATION = 2
@@ -183,7 +183,7 @@ class MX28_2:
     LEN_PRESENT_TEMPERATURE = 1
 
 # Seed Robotics RH8D for Protocol 1.0
-class RH8D_1:
+class RH8D_P1:
     # Addresses
     ADDR_MODEL_NUMBER = 0
     ADDR_FIRMWARE_VERSION = 2
@@ -362,4 +362,4 @@ class X_SERIES:
     LEN_PRESENT_INPUT_VOLTAGE = 2
     LEN_PRESENT_TEMPERATURE = 1
 
-ctrltables_str_mappings = {"MX28-1": MX28_1, "MX28-2": MX28_2, "RH8D-1": RH8D_1, "X-SERIES": X_SERIES}
+ctrltables_str_mappings = {"MX-P1": MX_P1, "MX-P2": MX_P2, "RH8D-P1": RH8D_P1, "X-SERIES": X_SERIES}
