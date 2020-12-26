@@ -11,6 +11,7 @@ Dynamixel SDK:
 git clone https://github.com/ROBOTIS-GIT/DynamixelSDK
 cd python
 python setup.py install
+/usr/bin/python3 setup.py install
 ```
 
 ## Before Usage - Maximize reading and writing speed
@@ -36,6 +37,7 @@ To install the module simply run
 
 ```
 python setup.py install
+/usr/bin/python3 setup.py install
 ```
 
 The control tables for each motor, describing addresses and lengths are in `DynamixelControlTables.py`. The only motors implemented right now are MX-28 (for Protocol 1.0 and 2.0) and RH8D hand from Seed robotics (Protocol 1.0). If you want to add more motors just edit that file referencing the Dynamixel manuals and add the entry to the `ctrltables_str_mappings` variable.
